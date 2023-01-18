@@ -132,7 +132,7 @@ def run(
         # Second-stage classifier (optional)
         # pred = utils.general.apply_classifier(pred, classifier_model, im, im0s)
 
-        # Process predictions
+        # 객체 탐지 프로세스
         for i, det in enumerate(pred):  # per image
             seen += 1
             if webcam:  # batch_size >= 1
